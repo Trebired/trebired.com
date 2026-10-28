@@ -1,0 +1,101 @@
+{
+  "author": "Miroslav Machynka (Trebired)",
+  "config": {
+    "organization": {
+      "displayName": "Trebired",
+      "name": "trebired",
+      "website": "https://trebired.com"
+    },
+    "product": {
+      "displayName": "Trebired",
+      "name": "trebired-com",
+      "website": "https://trebired.com"
+    },
+    "contacts": {
+      "abuse": "abuse@trebired.com",
+      "careers": "careers@trebired.com",
+      "general": "hello@trebired.com",
+      "legal": "legal@trebired.com",
+      "security": "security@trebired.com",
+      "support": "support@trebired.com"
+    },
+    "links": {
+      "github": "https://github.com/Trebired",
+      "linkedin": "https://www.linkedin.com/company/trebired",
+      "x": "https://x.com/trebired"
+    },
+    "sites": {
+      "main": {
+        "domain": "trebired.com",
+        "links": {
+          "github": "https://github.com/Trebired",
+          "linkedin": "https://www.linkedin.com/company/trebired",
+          "x": "https://x.com/trebired"
+        },
+        "markFooterHeight": "3.2rem",
+        "markFooterMaxWidth": "28rem",
+        "markHeaderHeight": "1.95rem",
+        "markHeaderMaxWidth": "14rem",
+        "name": "Trebired",
+        "titleFontFamily": "\"Montserrat\", \"Arial Black\", sans-serif",
+        "titleLetterSpacing": "0",
+        "titleTextTransform": "uppercase",
+        "titleWeight": 900
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trebired/trebired.com.git"
+  },
+  "name": "trebired-website",
+  "version": "1.0.0",
+  "description": "The Trebired website: what the organization builds, how it works and what it publishes, prerendered as a static site in English and Czech.",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "packageManager": "bun@1.3.14",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "scripts": {
+    "build": "bun src/bin/frontend/build.ts client",
+    "build:client": "bun src/bin/frontend/build.ts client",
+    "dev": "code-discipline gate -- bun --hot src/bin/dev.ts",
+    "discipline:check": "code-discipline check",
+    "discipline:fix": "code-discipline fix",
+    "typecheck": "tsc --noEmit",
+    "verify": "bun run discipline:check && bun run typecheck && bun run build"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "@trebired/bundler": "^5.18.2",
+    "@trebired/env": "^0.2.3",
+    "@trebired/frontend": "^29.2.0",
+    "@trebired/i18n": "^0.7.3",
+    "@trebired/logger": "^3.0.3",
+    "@trebired/overprint": "^0.6.0",
+    "@trebired/seo": "^0.6.0",
+    "@trebired/startup": "^0.8.0",
+    "@trebired/utils": "^0.9.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "simple-icons": "^16.28.0"
+  },
+  "devDependencies": {
+    "@trebired/code-discipline": "^7.2.3",
+    "@trebired/configs": "^0.4.0",
+    "@types/bun": "^1.4.0",
+    "@types/node": "^22.20.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "sass": "^1.103.1",
+    "sharp": "^0.34.5",
+    "typescript": "5.7.3"
+  },
+  "homepage": "https://trebired.com",
+  "bugs": {
+    "url": "https://github.com/Trebired/trebired.com/issues"
+  }
+}
