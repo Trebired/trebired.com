@@ -22,28 +22,6 @@ export const fallbackProjects: Project[] = [
     href: "https://github.com/Trebired/admitpress",
     isOwn: true,
   },
-  {
-    id: "ecommerce",
-    title: "Aurra Store",
-    kind: "Zakázka, e-shop",
-    year: "2025",
-    description:
-    "Kompletní e-shop na míru s vlastním administračním rozhraním, platební bránou a napojením na sklad.",
-    tags: ["E-commerce", "Headless", "Platby"],
-    image: "",
-    href: "#kontakt",
-  },
-  {
-    id: "restaurant",
-    title: "Bistro Kámen",
-    kind: "Zakázka, prezentační web",
-    year: "2024",
-    description:
-    "Prezentační web s online rezervačním systémem a digitálním jídelním lístkem pro městské bistro.",
-    tags: ["Web na míru", "Rezervace", "CMS"],
-    image: "",
-    href: "#kontakt",
-  },
 ];
 
 export const services: Service[] = [

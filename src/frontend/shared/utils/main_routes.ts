@@ -18,13 +18,16 @@ export const mainRoutes: Record<string, Record<SupportedLang, RouteMeta>> = {
   },
   "/projects": {
     en: {
-      title: pageTitle(`Projects: products and client work`, mainName),
+      title: pageTitle(`Projects: products and open source`, mainName),
       description:
-      `What ${mainName} has built and what it is building now: its own products, client work, and the open registry all of it is assembled from.`,
+      `What ${mainName} has built and what it is building now: its own products and the open registry ` +
+        `all of it is assembled from, every repository public.`,
     },
     cs: {
-      title: pageTitle(`Projekty: vlastní produkty a zakázky`, mainName),
-      description: `Co ${mainName} postavil a co staví teď: vlastní produkty, práce pro klienty a otevřený registr, ze kterého se všechno skládá.`,
+      title: pageTitle(`Projekty: vlastní produkty a open source`, mainName),
+      description:
+      `Co ${mainName} postavil a co staví teď: vlastní produkty a otevřený registr, ` +
+        `ze kterého se všechno skládá, každý repozitář veřejný.`,
     },
   },
   "/services": {

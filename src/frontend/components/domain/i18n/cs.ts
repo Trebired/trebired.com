@@ -35,22 +35,6 @@ export default defineMessages({
         tag4: "Tisk",
         title: "AdmitPress",
       },
-      ecommerce: {
-        description: "Kompletní e-shop na míru s vlastním administračním rozhraním, platební bránou a napojením na sklad.",
-        kind: "Zakázka - e-shop",
-        tag1: "E-commerce",
-        tag2: "Headless",
-        tag3: "Platby",
-        title: "Aurra Store",
-      },
-      restaurant: {
-        description: "Prezentační web s online rezervačním systémem a digitálním jídelním lístkem pro městské bistro.",
-        kind: "Zakázka - prezentační web",
-        tag1: "Web na míru",
-        tag2: "Rezervace",
-        tag3: "CMS",
-        title: "Bistro Kámen",
-      },
     },
     serviceItems: {
       design: {
@@ -134,10 +118,8 @@ export default defineMessages({
         "pravidly: kód psaný pro daný účel, žádné šablony, žádné sledování.",
     },
     work: {
-      clientGroup: "Zakázky",
       ownGroup: "Vlastní produkty",
-      summary:
-      "Vlastní produkty i zakázky pro klienty. Každý projekt od prvního nápadu po provoz.",
+      summary: "Vlastní produkty, každý od prvního nápadu po provoz.",
       title: "Co stavíme",
     },
 });

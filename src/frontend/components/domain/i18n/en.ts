@@ -35,22 +35,6 @@ export default defineMessages({
         tag4: "Printing",
         title: "AdmitPress",
       },
-      ecommerce: {
-        description: "A complete custom online store with its own admin interface, payment gateway, and warehouse integration.",
-        kind: "Client work - e-commerce",
-        tag1: "E-commerce",
-        tag2: "Headless",
-        tag3: "Payments",
-        title: "Aurra Store",
-      },
-      restaurant: {
-        description: "A marketing website with online reservations and a digital menu for a city bistro.",
-        kind: "Client work - marketing website",
-        tag1: "Custom website",
-        tag2: "Reservations",
-        tag3: "CMS",
-        title: "Bistro Kamen",
-      },
     },
     serviceItems: {
       design: {
@@ -134,10 +118,8 @@ export default defineMessages({
         "same rules: code written for its purpose, no templates, no tracking.",
     },
     work: {
-      clientGroup: "Client work",
       ownGroup: "Own products",
-      summary:
-      "Our own products and custom client projects. Every build from first concept to live operation.",
+      summary: "Our own products, each one built from first concept to live operation.",
       title: "What we build",
     },
 });

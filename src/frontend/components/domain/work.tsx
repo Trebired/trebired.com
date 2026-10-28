@@ -18,7 +18,7 @@ function projectRows(projects: Project[]) {
   }));
 }
 
-const OVERRIDDEN = ["admitpress", "ecommerce", "restaurant"];
+const OVERRIDDEN = ["admitpress"];
 const TAGS = ["tag1", "tag2", "tag3", "tag4"];
 
 export function localizeProject(project: Project, translator: I18nTranslator): Project {
@@ -39,7 +39,6 @@ function GroupedWorkSection({ all, inverted }: { all: Project[]; inverted: boole
   const lang = useLang();
   const translator = createSectionTranslator(lang);
   const own = all.filter((project) => project.isOwn);
-  const client = all.filter((project) => !project.isOwn);
 
   return (
     <>
@@ -50,14 +49,6 @@ function GroupedWorkSection({ all, inverted }: { all: Project[]; inverted: boole
         title={translator("work.ownGroup")}
         tone={inverted ? "inverse" : undefined}
         weight="major"
-        />
-      ) : null}
-    {client.length > 0 ? (
-        <FigureRowsSection
-        grid
-        rows={projectRows(client)}
-        title={translator("work.clientGroup")}
-
         />
       ) : null}
     </>
