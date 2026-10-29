@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.2
+
+- Updated `@trebired/frontend` to 29.4.0. The website shows no maker credit in its footer; the credit is for the sites Trebired builds for others.
+
 ## 1.0.1
 
 - Moved the page system onto `createSitePages` from `@trebired/frontend` 29.3.0. Every page is still its own chunk, and a page's code now starts loading when a link to it is hovered or focused.
