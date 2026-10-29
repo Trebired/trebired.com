@@ -43,6 +43,9 @@
       "#0xf8pi7dn7b4": [
         "../../../src/frontend/pages/sustainability/i18n/cs.ts"
       ],
+      "#0zc9hkdfs9na": [
+        "../../../src/frontend/shared/pages.tsx"
+      ],
       "#0zz41lsvx30d": [
         "../../frontend/containers/chrome.ts"
       ],
@@ -364,9 +367,6 @@
       "#d2g4b66zdp2x": [
         "../../../src/frontend/pages/handbook/i18n/en.ts"
       ],
-      "#d3lahysi0opk": [
-        "../../../src/frontend/shared/content_island.tsx"
-      ],
       "#d4b55k91osgd": [
         "../../../src/frontend/pages/case_studies/study.tsx"
       ],
@@ -375,9 +375,6 @@
       ],
       "#d96hywjyljyu": [
         "../../../src/frontend/pages/about/i18n/en.ts"
-      ],
-      "#db6q5fi9ok4e": [
-        "../../../src/frontend/shared/page/pages.tsx"
       ],
       "#dcie61ioc5jy": [
         "../../../src/frontend/pages/team/index.tsx"
@@ -745,9 +742,6 @@
       "#qe1gc4nl2ay8": [
         "../../../src/frontend/components/chrome/header.tsx"
       ],
-      "#qocn0a40ams1": [
-        "../../../src/frontend/shared/page/content.tsx"
-      ],
       "#qqccps80z3v3": [
         "../../../src/frontend/pages/document/index.tsx"
       ],
@@ -852,9 +846,6 @@
       ],
       "#tkw9rvt8v4c1": [
         "../../../src/frontend/pages/handbook/person_mark.ts"
-      ],
-      "#tlyhjewbs3bh": [
-        "../../../src/frontend/shared/page/route.tsx"
       ],
       "#tqazkd0yd6ui": [
         "../../../src/frontend/components/sections/banner.tsx"

@@ -16,7 +16,7 @@ import { Header } from "#qe1gc4nl2ay8";
 import { setLang } from "#0ft8fsqbbufa";
 import { hydrateChromeRoots } from "./../shared/chrome_roots";
 import { LANG_ROUTING } from "./../shared/lang/policy";
-import { mountContentIsland } from "./../shared/content_island";
+import { sitePages } from "./../shared/pages";
 import { SiteFooter } from "./../components/chrome/site/footer";
 import { siteOrigins } from "./../components/chrome/site/links";
 import { currentSite } from "./../shared/site";
@@ -47,7 +47,7 @@ function mountChrome() {
 }
 
 void mountChrome()
-.then(() => mountContentIsland("live_content"))
+.then(() => sitePages.mountPages("live_content"))
 .then(() => {
     bindFrontendRuntime(document, {
         reveal: { selector: REVEAL_SELECTOR },

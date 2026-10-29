@@ -1,10 +1,10 @@
 import { RisoArt } from "./../riso/art";
 import { heroField, heroTone } from "./hero/tones";
-import { useCurrentRoute } from "./../../shared/page/route";
 import {
   button as PrimitiveButton,
   Icon,
   Title,
+  usePageRoute,
   visibilityScopeAttrs,
   visibilityTargetAttrs,
   VisibilityToggle,
@@ -28,7 +28,7 @@ export function PageHero({
     meta,
     children,
   }: PageHeroProps) {
-  const route = useCurrentRoute();
+  const route = usePageRoute();
   const tone = heroTone(route);
 
   return (

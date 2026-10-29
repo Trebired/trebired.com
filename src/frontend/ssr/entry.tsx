@@ -18,7 +18,7 @@ import type { ReactElement } from "react";
 
 import { currentSite } from "./../shared/site";
 import { Header } from "#qe1gc4nl2ay8";
-import { PageContent, preparePageContent } from "./../shared/page/content";
+import { sitePages } from "./../shared/pages";
 import type { SiteDefinition } from "./../shared/network/constants";
 import { SiteFooter } from "./../components/chrome/site/footer";
 import { siteOrigins } from "./../components/chrome/site/links";
@@ -43,7 +43,7 @@ configureSiteLinks(links, { origins: siteOrigins(), set: currentSite().id });
 const iconRenderer = createServerIconRenderer({}, { rootDir: process.cwd() });
 
 export async function renderRouteBody(path: string, locale: string): Promise<string> {
-  await preparePageContent(path);
+  await sitePages.preparePage(path);
   const site = currentSite();
   const localized = (node: ReactElement) => withIconServerRenderer(
     iconRenderer,
@@ -57,7 +57,7 @@ export async function renderRouteBody(path: string, locale: string): Promise<str
   const header = localized(<Header path={path} />);
   const content = localized(
     <LiveIslandMount rootId="live_content">
-    <PageContent path={path} />
+    <sitePages.PageContent path={path} />
     </LiveIslandMount>,
   );
   const footer = localized(<SiteFooter />);

@@ -56,7 +56,7 @@ The build writes the site to `dist/`. It is a static directory; serve it with an
 
 ### Frontend-only application
 
-The website has no backend. `src/bin/frontend/build.ts` fetches the build data, bundles the client and prerenders every route; nothing runs at request time. `src/bin/dev.ts` is local preview, not a production server. Navigation after the first load is a soft navigation through `@trebired/frontend`, so the document loads once and the content swaps in place.
+The website has no backend. `src/bin/frontend/build.ts` fetches the build data, bundles the client and prerenders every route; nothing runs at request time. `src/bin/dev.ts` is local preview, not a production server. Navigation after the first load is a soft navigation through `@trebired/frontend`, so the document loads once and the content swaps in place. `src/frontend/shared/pages.tsx` gives `createSitePages` from `@trebired/frontend` a loader for every route, the documents and articles included: each page is its own chunk, a first visit downloads only the page it opens, and a page's code starts loading when a link to it is hovered or focused.
 
 ### Pages
 
