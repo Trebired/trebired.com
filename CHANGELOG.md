@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.8
+
+- Removed the grey line screen from the left of every hero print, on the home page and on each page, so the titles sit on plain dark and the dots and the printed mark stay on the right.
+
 ## 1.0.7
 
 - Cached the fingerprinted font files for a year. The browser checked them with the server on every page, so each preload lost the race to its own cached copy and was reported as unused; now a repeat visit takes them from cache at once, with no warnings.
