@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.6
+
+- Updated `@trebired/frontend` to 29.6.0 and `@trebired/bundler` to 5.19.0. Pages preload only the fonts their first screen uses, IBM Plex Sans 400 and 700 and Montserrat 900, instead of every declared weight, so a first visit fetches fewer font files up front and the browser no longer reports unused preloads.
+
 ## 1.0.5
 
 - Updated `@trebired/frontend` to 29.5.2. A removed frame is logged as one short line, such as `Removed tbf-unverified iframe#id "Title"`, instead of the whole element.
