@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.7
+
+- Cached the fingerprinted font files for a year. The browser checked them with the server on every page, so each preload lost the race to its own cached copy and was reported as unused; now a repeat visit takes them from cache at once, with no warnings.
+
 ## 1.0.6
 
 - Updated `@trebired/frontend` to 29.6.0 and `@trebired/bundler` to 5.19.0. Pages preload only the fonts their first screen uses, IBM Plex Sans 400 and 700 and Montserrat 900, instead of every declared weight, so a first visit fetches fewer font files up front and the browser no longer reports unused preloads.
