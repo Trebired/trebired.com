@@ -98,10 +98,6 @@ const DOTS: Fill = { clear: true, from: [1, 0], kind: "linear", to: [0.45, 0.85]
 
 const DOTS_UNDER: Fill = { ...DOTS, peak: 0.6 };
 
-const LINES: Fill = { clear: true, from: [0, 0], kind: "linear", to: [0.7, 0.85] };
-
-const HOME_LINES: Fill = { clear: true, from: [0, 0], kind: "linear", to: [0.62, 0.5] };
-
 const HOME_DOTS: Fill = { clear: true, from: [1, 0], kind: "linear", to: [0.58, 0.78] };
 
 const HOME_UNDER: Fill = { ...HOME_DOTS, peak: 0.6 };
@@ -119,8 +115,6 @@ const SOURCE_TALL: Fill = { at: [0.5, 0.77], kind: "radial", range: [0.3, 0.03],
 const TALL_DOTS: Fill = { clear: true, from: [0.9, 0], kind: "linear", to: [0.3, 0.62] };
 
 const TALL_UNDER: Fill = { ...TALL_DOTS, peak: 0.6 };
-
-const TALL_LINES: Fill = { clear: true, from: [0, 1], kind: "linear", to: [0.6, 0.32] };
 
 const SEAL: Plate[] = [
   { ...plate(INK, FLAT, SOLID, [0, 0], 0, 0), mask: true, part: "halo" },
@@ -142,25 +136,21 @@ const RECIPES: Record<Recipe, Plate[]> = {
     ...SEAL,
     { ...plate(TONE_A, DOTS, halftone("circle", 45, 46), [0, 0], 6, 0.6), knock: 0, part: "field", vary: true },
     { ...plate(TONE_B, DOTS_UNDER, halftone("circle", 15, 46), [8, -6], -3, -0.5), knock: 0, part: "field", vary: true },
-    { ...plate(PALETTE.stone, LINES, halftone("line", 0, 90), [0, 0], -4, -0.5), knock: 0, opaque: true, part: "field" },
   ],
   "home-tall": [
     ...SEAL,
     { ...plate(TONE_A, TALL_DOTS, halftone("circle", 45, 46), [0, 0], 6, 0.6), knock: 0, part: "field", vary: true },
     { ...plate(TONE_B, TALL_UNDER, halftone("circle", 15, 46), [8, -6], -3, -0.5), knock: 0, part: "field", vary: true },
-    { ...plate(PALETTE.stone, TALL_LINES, halftone("line", 0, 90), [0, 0], -4, -0.5), knock: 0, opaque: true, part: "field" },
   ],
   "poster-tall": [
     ...SEAL,
     { ...plate(TONE_A, TALL_DOTS, halftone("circle", 45, 46), [0, 0], 6, 0.6), knock: 0, part: "field", vary: true },
     { ...plate(TONE_B, TALL_UNDER, halftone("circle", 15, 46), [8, -6], -3, -0.5), knock: 0, part: "field", vary: true },
-    { ...plate(PALETTE.stone, TALL_LINES, halftone("line", 0, 90), [0, 0], -4, -0.5), knock: 0, opaque: true, part: "field" },
   ],
   home: [
     ...SEAL,
     { ...plate(TONE_A, HOME_DOTS, halftone("circle", 45, 46), [0, 0], 6, 0.6), knock: 0, part: "field", vary: true },
     { ...plate(TONE_B, HOME_UNDER, halftone("circle", 15, 46), [8, -6], -3, -0.5), knock: 0, part: "field", vary: true },
-    { ...plate(PALETTE.stone, HOME_LINES, halftone("line", 0, 90), [0, 0], -4, -0.5), knock: 0, opaque: true, part: "field" },
   ],
   mark: [
     plate(PALETTE.peach, DIAGONAL, halftone("square", 20, 34), [10, 6], 9, 1),
