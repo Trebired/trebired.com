@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.9
+
+- Updated `@trebired/frontend` to 29.7.0 and `@trebired/overprint` to 0.8.0. Phones and tablets scroll without a live blur behind text, without blocks sliding in, and with page heights that no longer follow the address bar. Prints stay still on those devices, and the heroes and banners use the same fixed height.
+
 ## 1.0.8
 
 - Removed the grey line screen from the left of every hero print, on the home page and on each page, so the titles sit on plain dark and the dots and the printed mark stay on the right.
