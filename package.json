@@ -49,7 +49,7 @@
     "url": "git+https://github.com/Trebired/trebired.com.git"
   },
   "name": "trebired-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The Trebired website: what the organization builds, how it works and what it publishes, prerendered as a static site in English and Czech.",
   "private": true,
   "license": "AGPL-3.0-only",

@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.3
+
+- Updated `@trebired/frontend` to 29.5.0. A frame the site did not declare, such as one a script adds to the page after it loads, is removed before it shows and reported in the browser console.
+
 ## 1.0.2
 
 - Updated `@trebired/frontend` to 29.4.0. The website shows no maker credit in its footer; the credit is for the sites Trebired builds for others.
