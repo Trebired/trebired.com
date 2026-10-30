@@ -10,7 +10,7 @@ import { githubTeamSource } from "./../../src/bin/frontend/sources/team";
 import { teamPeople } from "./../../src/frontend/shared/team/people";
 
 export default defineConfig({
-    forVersion: "5.18.2",
+    forVersion: "5.19.0",
     build: {
       clientOutDir: "dist",
       publicPath: "/",

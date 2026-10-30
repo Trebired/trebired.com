@@ -11,7 +11,7 @@ import { interactions, runtime, semantics } from "./theme";
 import { breakpoints } from "./typography";
 
 export default defineConfig({
-    forVersion: "29.5.0",
+    forVersion: "29.6.0",
     containers,
     links,
     assets: {
@@ -75,12 +75,14 @@ export default defineConfig({
             family: "IBM Plex Sans",
             subsets: ["latin", "latin-ext"],
             weights: [400, 500, 600, 700],
+            preload: [400, 700],
           },
           montserrat: {
             package: "montserrat",
             family: "Montserrat",
             subsets: ["latin", "latin-ext"],
             weights: [700, 800, 900],
+            preload: [900],
           },
           nunito: {
             package: "nunito",
