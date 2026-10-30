@@ -4,6 +4,10 @@ All notable changes to `trebired-website` will be documented here.
 
 This project follows semantic versioning once published.
 
+## 1.0.10
+
+- Changed the prints on phones and tablets to one shared grain image instead of a texture computed live, so new parts of a page draw far faster while scrolling.
+
 ## 1.0.9
 
 - Updated `@trebired/frontend` to 29.7.0 and `@trebired/overprint` to 0.8.0. Phones and tablets scroll without a live blur behind text, without blocks sliding in, and with page heights that no longer follow the address bar. Prints stay still on those devices, and the heroes and banners use the same fixed height.
