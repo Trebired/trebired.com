@@ -1,4 +1,5 @@
 import { defineConfig, siteSocialIconSpecs } from "@trebired/frontend/config";
+import { printGrainCss } from "@trebired/overprint/grain";
 
 import { components } from "./components";
 import { containers } from "./containers";
@@ -11,8 +12,9 @@ import { interactions, runtime, semantics } from "./theme";
 import { breakpoints } from "./typography";
 
 export default defineConfig({
-    forVersion: "29.7.0",
+    forVersion: "29.8.0",
     containers,
+    css: printGrainCss(),
     links,
     assets: {
       favicon: {
