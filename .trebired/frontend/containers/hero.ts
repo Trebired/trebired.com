@@ -61,7 +61,7 @@ const hero: FrontendContainer = {
     cover: {
       style: {
         aspectRatio: "21 / 9",
-        inlineSize: "max(100%, calc(100dvh * 21 / 9))",
+        inlineSize: "max(100%, calc(100svh * 21 / 9))",
         insetBlockStart: "0",
         insetInlineStart: "50%",
         opacity: "0.38",
@@ -111,7 +111,7 @@ const hero: FrontendContainer = {
         background: INK,
         color: PAGE,
         display: "grid",
-        minHeight: "100dvh",
+        minHeight: "100svh",
         position: "relative",
       },
     },
@@ -150,7 +150,7 @@ const hero: FrontendContainer = {
         alignItems: "stretch",
         overflow: "hidden",
         borderBottom: HAIRLINE,
-        minHeight: "100dvh",
+        minHeight: "100svh",
       },
     },
     page: {

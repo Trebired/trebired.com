@@ -11,7 +11,7 @@ import { interactions, runtime, semantics } from "./theme";
 import { breakpoints } from "./typography";
 
 export default defineConfig({
-    forVersion: "29.6.0",
+    forVersion: "29.7.0",
     containers,
     links,
     assets: {

@@ -70,7 +70,7 @@ const banner: FrontendContainer = {
     alignItems: "center",
     isolation: "isolate",
     justifyContent: "center",
-    minHeight: "100dvh",
+    minHeight: "100svh",
     overflow: "hidden",
     position: "relative",
   },
